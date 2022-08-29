@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+        <center> 
+            <div class="container p-3 col-sm-6 col-md-5 ">
+                <input type="text" disabled placeholder="0" class=" border-dark  w-100 mt-4 rounded p-3 fs-1" id="input">
+            <div class="row">
+                <div class="mt-4">
+                    <button class="col-3 bg-danger shadow rounded" onclick="del()">C</button>
+                    <button class="col-3 bg-secondary shadow rounded " onclick="digit('()')">(</button>
+                    <button class="col-3 bg-secondary shadow rounded " onclick="digit('()')">)</button>
+                    <button class="col-2 shadow bg-secondary rounded " onclick="digit('+')">+</button>
+                </div>
+                <div class="mt-4">
+                    <button class="col-3 shadow rounded bg-white" onclick="digit('1')">1</button>
+                    <button class="col-3 shadow rounded bg-white " onclick="digit('2')">2</button>
+                    <button class="col-3 shadow rounded bg-white" onclick="digit('3')">3</button>
+                    <button class="col-2 bg-secondary shadow rounded " onclick="digit('-')">-</button>
+            </div>
+                <div class="mt-4">
+                    <button class="col-3 shadow rounded bg-white" onclick="digit('4')">4</button>
+                    <button class="col-3 shadow rounded bg-white" onclick="digit('5')">5</button>
+                    <button class="col-3 shadow rounded bg-white" onclick="digit('6')">6</button>
+                    <button class="col-2 bg-secondary shadow rounded " onclick="digit('*')">*</button>
+                </div>
+                <div class="mt-4">
+                    <button class="col-3 shadow rounded bg-white" onclick="digit('7')">7</button>
+                    <button class="col-3 shadow rounded bg-white" onclick="digit('8')">8</button>
+                    <button class="col-3 shadow rounded bg-white" onclick="digit('9')">9</button>
+                    <button class="col-2 bg-secondary shadow rounded " onclick="digit('/')">/</button>
+                </div>
+                <div class="mt-4 mb-3">
+                    <button class="col-3 shadow rounded bg-white" onclick="digit('0')">0</button>
+                    <button class="col-3 shadow rounded bg-white" onclick="digit('.')">.</button>
+                    <button class="col-3 shadow rounded bg-white" onclick="solve()">=</button>
+                    <button class="col-2 bg-secondary shadow rounded " onclick="digit('e')">e</button>
+                </div> 
+            </div>
+        </div>
+        </center>
+    <script src="style.js"></script>
+</body>
+</html>
